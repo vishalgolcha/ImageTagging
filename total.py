@@ -36,7 +36,7 @@ def get_keywords(sample):
 	d= [extra[i][0] for extra in tagged_sentences for i in range(len(extra)) if extra[i][1] in filt ]
 	return list(set(d))
 
-def def get_descriptors(sample):
+def  get_descriptors(sample):
 	sentences = nltk.sent_tokenize(sample)
 	tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
 	# print tokenized_sentences 
@@ -77,7 +77,7 @@ def get_entity(sample):
 
 
 # client=MongoClient()
-client =MongoClient('mongodb://digi1:digi1234@52.21.107.21:27017')
+client =MongoClient('mongodb://')
 db=client.links 
 collection=db.toi_feed
 word="gistai"

@@ -66,7 +66,7 @@ def get_entity(sample):
 
 
 # client=MongoClient()
-client =MongoClient('mongodb://digi1:digi1234@52.21.107.21:27017')
+client =MongoClient('mongodb://')
 db=client.links 
 collection=db.toi_feed
 word="gistai"

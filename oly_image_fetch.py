@@ -14,14 +14,9 @@ with open('olympics.csv','rb') as csvfile:
         # print result
         # output_fil.writelines(str(result))
 
-apis=["AIzaSyB5ztRJqq4qaPo6s-2-s3PTuO0bt1OAmCI",\
-"AIzaSyDBS4E2IYOnzmhuwI-QcjBrDX5Z7tZyFvE","AIzaSyDt9UmAid642Wa5sa0VGHfeoYgXmBlj6ow",\
-"AIzaSyC2Lu4B5thDJBxI_-xfbcoincN5AdFibuU","AIzaSyDVysasZ851z1f0K5uJt0NzrGJMOvYlgtM",\
-"AIzaSyBeWbrSE2GqxWp_7P5ooI24hRIvoIUd77U","AIzaSyCM8oUqUzzXcK7y4obzRSZaZQUhfefDJ0U",\
-"AIzaSyAatwEaqfIv2Te0KPmaeWLxESkkdQBVsh0","AIzaSyAatwEaqfIv2Te0KPmaeWLxESkkdQBVsh0",\
-"AIzaSyAndvYsoGl0ryVsJReO27VYlqSD-ElZf6E","AIzaSyBPhXQQlIipVBxKW1DbgdrIpUSJLVCdw4o"]
+apis=[]
 
-cx_id='006837156905925461928:ini4xlggkhc'
+cx_id=''
 
 def serch(que,ap):
 	links=[]

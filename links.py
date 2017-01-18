@@ -6,7 +6,7 @@ from clarifai.client import ClarifaiApi
 
 cf=ClarifaiApi()
 
-client =MongoClient('mongodb://digi1:digi1234@52.21.107.21:27017')
+client =MongoClient('mongodb://')
 
 db=client.links 
 collection=db.cumulative
@@ -58,13 +58,6 @@ for x in collection.find():
 
 
 				dic["list intersect"]=inter
-				# if cnt<=102 :
-				# 	print tag
-				# 	print type(tag)
-				# 	print lit
-				# 	print type(lit)
-				# 	print (set(tag) & set(lit))
-				# 	print inter 
 
 				tabs.insert_one(dic)
 				time.sleep(1)

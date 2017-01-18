@@ -7,13 +7,8 @@ import time
 from pymongo import MongoClient
 from apiclient.discovery import build
 
-apis=["AIzaSyB5ztRJqq4qaPo6s-2-s3PTuO0bt1OAmCI",\
-"AIzaSyDBS4E2IYOnzmhuwI-QcjBrDX5Z7tZyFvE","AIzaSyDt9UmAid642Wa5sa0VGHfeoYgXmBlj6ow",\
-"AIzaSyC2Lu4B5thDJBxI_-xfbcoincN5AdFibuU","AIzaSyDVysasZ851z1f0K5uJt0NzrGJMOvYlgtM",\
-"AIzaSyBeWbrSE2GqxWp_7P5ooI24hRIvoIUd77U","AIzaSyCM8oUqUzzXcK7y4obzRSZaZQUhfefDJ0U",\
-"AIzaSyAatwEaqfIv2Te0KPmaeWLxESkkdQBVsh0","AIzaSyAatwEaqfIv2Te0KPmaeWLxESkkdQBVsh0",\
-"AIzaSyAndvYsoGl0ryVsJReO27VYlqSD-ElZf6E","AIzaSyBPhXQQlIipVBxKW1DbgdrIpUSJLVCdw4o"]
-cx_id='006837156905925461928:ini4xlggkhc'
+apis=[]
+cx_id=''
 
 def custom_search(dkey,cx_id,your_search):
 	
@@ -42,7 +37,7 @@ def custom_search(dkey,cx_id,your_search):
 
 
 client=MongoClient()
-client =MongoClient('mongodb://digi1:digi1234@52.21.107.21:27017')
+client =MongoClient('mongodb://')
 db=client.links 
 collection=db.db_nltk
 encount=0
